@@ -8,8 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="./Feature/Login.feature",
-		glue="stepDefinition"   //name of package 
+		features="./Features/Login.feature",
+		glue="stepDefinition",   //name of package 
+		plugin={"html:target/cucumberHtmlrep.html"}
 		
 		)
 public class TestRunner {

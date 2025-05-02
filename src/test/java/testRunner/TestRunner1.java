@@ -9,9 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 
 
-features="./Feature/HooksFeature.feature",
-	glue={"stepDefinition","applicationHooks"}   //name of package 
-	
+features="./Features/HooksFeature.feature",
+	glue={"stepDefinition","applicationHooks"},   //name of package 
+	plugin={"json:target/cucumberJsonRep.json"}
 	)
 
 public class TestRunner1 {
